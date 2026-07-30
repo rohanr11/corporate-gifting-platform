@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-porcelain text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+/* Visible keyboard focus everywhere — accessibility floor */
+:focus-visible {
+  outline: 2px solid theme('colors.brass.DEFAULT');
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature element: the "gift tag" notch used on product cards —
+   a small circular die-cut in the top-left corner, like a real hang tag. */
+.gift-tag {
+  position: relative;
+}
+.gift-tag::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: theme('colors.porcelain');
+  border: 1.5px solid theme('colors.brass.DEFAULT');
+  z-index: 10;
+}
+
+.ribbon-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    theme('colors.brass.DEFAULT') 50%,
+    transparent 100%
+  );
+}

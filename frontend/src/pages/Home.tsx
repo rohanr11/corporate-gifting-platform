@@ -12,8 +12,8 @@ export function Home() {
       <Hero />
       <CategoryGrid />
       <FeaturedProducts />
-      <CorporateClients />
-      <Testimonials />
+      {/*<CorporateClients />*/}
+      {/*<Testimonials />*/}
       <Newsletter />
     </main>
   );

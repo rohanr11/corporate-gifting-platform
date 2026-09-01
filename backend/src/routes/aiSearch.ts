@@ -75,7 +75,7 @@ Respond with ONLY valid JSON in exactly this shape, nothing else:
   } catch (err: any) {
     console.error("AI search error:", err.message);
     res.status(500).json({
-      error: "AI search failed. Check that GEMINI_API_KEY is set correctly in backend/.env.",
+      error: `AI search failed: ${err.message || "Unknown error"}`,
       details: err.message,
     });
   }

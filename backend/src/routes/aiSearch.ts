@@ -6,7 +6,7 @@ export const aiSearchRouter = Router();
 
 interface GeminiSearchResult {
   summary: string;
-  recommendations: { productId: number; reason: string }[];
+  recommendations: { productId: number; reason: string; isHighlyRecommended?: boolean }[];
 }
 
 // POST /api/ai-search  { query: "Need gifts under ₹1500 for 200 employees" }
@@ -28,6 +28,7 @@ aiSearchRouter.post("/", async (req, res) => {
       price: p.price,
       tags: p.tags,
       minOrderQty: p.minOrderQty,
+      rating: p.rating,
       description: p.shortDescription,
     }));
 
@@ -44,14 +45,23 @@ ${JSON.stringify(catalogueForPrompt)}
 USER REQUEST:
 "${query}"
 
-Select up to 6 products from the catalogue that best match the user's
-request (consider budget, quantity/minOrderQty, occasion, and tags).
+INSTRUCTIONS:
+1. For straightforward searches (e.g., "flower vase", "notebook"), return ONLY exact or highly relevant matches. Do not pad the list with irrelevant products.
+2. For constraint-based queries (e.g., "under 4000", "minimum 50 qty"):
+   - Strictly adhere to the constraints (e.g., filter out products that exceed the budget).
+   - Sort the returned products from highest 'rating' to lowest 'rating'.
+   - Highlight 1 or 2 top products by setting "isHighlyRecommended": true.
+3. Select up to 6 products overall that best match the user's request.
 
 Respond with ONLY valid JSON in exactly this shape, nothing else:
 {
   "summary": "a short 1-2 sentence summary of what you recommend and why",
   "recommendations": [
-    { "productId": 1, "reason": "a short reason this product fits" }
+    { 
+      "productId": 1, 
+      "reason": "a short reason this product fits",
+      "isHighlyRecommended": true
+    }
   ]
 }
 `.trim();

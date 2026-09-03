@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { api } from "../lib/api";
 import { AISearchBar } from "../components/AISearchBar";
@@ -30,9 +29,6 @@ export function Search() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16">
       <div className="text-center mb-10">
-        <span className="inline-flex items-center gap-2 text-brass text-sm font-medium mb-4 border border-brass/30 rounded-full px-3 py-1">
-          <Sparkles size={14} /> Powered by Gemini 2.5 Flash
-        </span>
         <h1 className="text-3xl md:text-4xl font-display font-semibold mb-3">AI Gift Finder</h1>
         <p className="text-ink/60 max-w-xl mx-auto">
           Tell us the occasion, budget, and headcount — we'll match you to real products from

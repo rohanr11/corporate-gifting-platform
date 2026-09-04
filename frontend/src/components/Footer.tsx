@@ -39,7 +39,7 @@ export function Footer() {
           <h2 className="text-porcelain font-semibold mb-3 text-sm uppercase tracking-wide">Get in touch</h2>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2"><Mail size={15} /> hello@gildedandgrove.com</li>
-            <li className="flex items-center gap-2"><Phone size={15} /> +91 80 4000 1200</li>
+            <li className="flex items-center gap-2"><Phone size={15} /> +91 9148494633</li>
             <li className="flex items-center gap-2"><MapPin size={15} /> Bengaluru, India</li>
           </ul>
         </div>

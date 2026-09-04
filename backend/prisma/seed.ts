@@ -266,7 +266,7 @@ const productSeed = [
     desc: "Traditional clay diyas paired with assorted mithai in an elegant gift box, celebrating the festival of lights.",
     tags: "diwali,festive,affordable",
     minQty: 50,
-    img: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzPTN0THupItl2rj_13GuNOD0QXJFRQbFSBVcAijx9TQ&s=10",
   },
   {
     name: "Festive Spice & Tea Gift Set",

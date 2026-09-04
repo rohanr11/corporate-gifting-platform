@@ -25,7 +25,7 @@ const categories = [
     name: "Festive & Diwali",
     slug: "festive-diwali",
     description: "Celebratory hampers designed for Diwali, New Year, and other festive occasions.",
-    imageUrl: "https://images.unsplash.com/photo-1574974534413-b7f2b1d304f8?w=800",
+    imageUrl: "https://thumbs.dreamstime.com/b/diwali-celebrations-fire-crackers-shaped-homemade-chocolates-inside-beautiful-gift-box-fire-crackers-shaped-homemade-200391213.jpg",
   },
   {
     name: "Tech Gadgets",
@@ -107,7 +107,7 @@ const productSeed = [
     desc: "A cheerful snack box with gourmet cookies, trail mix, and a welcome card — perfect for budget-friendly bulk onboarding.",
     tags: "onboarding,affordable,snacks,bulk",
     minQty: 100,
-    img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800",
+    img: "https://www.wraparts.in/cdn/shop/files/Snack-boxes-20240513_212944.jpg?v=1757508835",
   },
 
   // ── Executive Gifts ────────────────────────────────────────────
@@ -257,7 +257,7 @@ const productSeed = [
     desc: "A festive hamper of premium almonds, cashews, and pistachios in a hand-painted brass bowl, perfect for Diwali gifting.",
     tags: "diwali,festive,premium",
     minQty: 30,
-    img: "https://images.unsplash.com/photo-1574974534413-b7f2b1d304f8?w=800",
+    img: "https://rukminim2.flixcart.com/image/480/480/xif0q/nut-dry-fruit/n/4/a/480-dry-fruits-box-perfect-diwali-gift-hamper-box-pack-of-6-for-original-imah6rqktsfarppx.jpeg?q=90",
   },
   {
     name: "Diwali Diya & Sweets Box",
@@ -302,7 +302,7 @@ const productSeed = [
     desc: "Three hand-poured soy candles in lavender, vanilla, and sandalwood — a warm, aromatic festive gift.",
     tags: "festive,candles,affordable,diwali",
     minQty: 30,
-    img: "https://images.unsplash.com/photo-1602607666160-e8be8da85e04?w=800",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzwSBe-8Uhq3XLzD0zednRbK4p6Vcqz1zDKymsRvXGhIJOs7JZASsQAI&s=10",
   },
 
   // ── Tech Gadgets ───────────────────────────────────────────────

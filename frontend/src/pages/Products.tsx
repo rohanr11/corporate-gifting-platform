@@ -42,7 +42,7 @@ export function Products() {
         <button
           onClick={() => setSearchParams({})}
           className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
-            !category ? "bg-forest text-porcelain" : "bg-forest/5 hover:bg-forest/10"
+            !category ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-ink"
           }`}
         >
           All
@@ -52,7 +52,7 @@ export function Products() {
             key={c.id}
             onClick={() => setSearchParams({ category: c.slug })}
             className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
-              category === c.slug ? "bg-forest text-porcelain" : "bg-forest/5 hover:bg-forest/10"
+              category === c.slug ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-ink"
             }`}
           >
             {c.name}

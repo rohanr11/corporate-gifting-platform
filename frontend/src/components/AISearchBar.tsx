@@ -45,7 +45,7 @@ export function AISearchBar({
         <button
           type="submit"
           disabled={loading || !query.trim()}
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-forest text-porcelain font-medium px-5 py-3 rounded-full hover:bg-forest-light transition-colors disabled:opacity-50 flex items-center gap-2"
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-brass text-forest font-medium px-5 py-3 rounded-full hover:bg-brass-light transition-colors disabled:opacity-50 flex items-center gap-2"
         >
           {loading ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
           {loading ? "Thinking..." : "Search"}
@@ -60,7 +60,7 @@ export function AISearchBar({
               setQuery(p);
               onSearch(p);
             }}
-            className="text-xs bg-forest/5 hover:bg-brass/20 text-forest px-3 py-1.5 rounded-full transition-colors"
+            className="text-xs bg-forest-light hover:bg-brass/20 text-ink hover:text-brass px-3 py-1.5 rounded-full transition-colors border border-forest/10"
           >
             {p}
           </button>

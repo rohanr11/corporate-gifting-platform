@@ -14,7 +14,7 @@ export function BulkQuote() {
   if (submitted) {
     return (
       <main className="max-w-xl mx-auto px-6 py-24 text-center">
-        <CheckCircle2 className="mx-auto mb-4 text-forest" size={48} />
+        <CheckCircle2 className="mx-auto mb-4 text-brass" size={48} />
         <h1 className="text-2xl font-display font-semibold mb-2">Request received</h1>
         <p className="text-ink/60">
           Our team will reach out within one business day with a tailored quote.
@@ -52,7 +52,7 @@ export function BulkQuote() {
             id="message"
             name="message"
             rows={4}
-            className="w-full border border-forest/20 rounded-lg px-4 py-3 focus:outline-none focus:border-brass"
+            className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass"
             placeholder="Anything else we should know?"
           />
 
@@ -60,7 +60,7 @@ export function BulkQuote() {
         </div>
         <button
           type="submit"
-          className="bg-forest text-porcelain font-semibold px-8 py-3 rounded-full hover:bg-forest-light transition-colors"
+          className="bg-brass text-forest font-semibold px-8 py-3 rounded-full hover:bg-brass-light transition-colors"
         >
           Submit request
         </button>
@@ -93,7 +93,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full border border-forest/20 rounded-lg px-4 py-3 focus:outline-none focus:border-brass"
+        className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass"
       />
     </div>
   );

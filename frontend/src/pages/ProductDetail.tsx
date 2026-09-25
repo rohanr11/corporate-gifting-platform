@@ -39,7 +39,7 @@ export function ProductDetail() {
       <main className="max-w-3xl mx-auto px-6 py-24 text-center">
         <h1 className="text-2xl font-display font-semibold mb-2">Product not found</h1>
         <p className="text-ink/60 mb-6">This gift may have been renamed or removed.</p>
-        <Link to="/products" className="text-forest font-medium hover:text-brass">
+        <Link to="/products" className="text-brass font-medium hover:text-brass-light">
           ← Back to catalogue
         </Link>
       </main>
@@ -90,9 +90,9 @@ export function ProductDetail() {
       <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
 
       <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-sm text-ink/50 mb-6">
-        <Link to="/products" className="hover:text-forest">Products</Link>
+        <Link to="/products" className="hover:text-brass">Products</Link>
         <ChevronRight size={14} />
-        <Link to={`/products?category=${product.category?.slug}`} className="hover:text-forest">
+        <Link to={`/products?category=${product.category?.slug}`} className="hover:text-brass">
           {product.category?.name}
         </Link>
         <ChevronRight size={14} />
@@ -100,7 +100,7 @@ export function ProductDetail() {
       </nav>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="rounded-2xl overflow-hidden bg-porcelain aspect-square">
+        <div className="rounded-2xl overflow-hidden bg-forest-light aspect-square">
           <img
             src={product.imageUrl}
             alt={`${product.name} — ${product.shortDescription}`}
@@ -115,7 +115,7 @@ export function ProductDetail() {
             {product.rating.toFixed(1)} rating · Min. order {product.minOrderQty} units
           </div>
           <p className="text-ink/70 leading-relaxed mb-6">{product.description}</p>
-          <p className="font-mono text-2xl font-semibold text-forest mb-6">
+          <p className="font-mono text-2xl font-semibold text-brass mb-6">
             ₹{product.price.toLocaleString("en-IN")} <span className="text-sm text-ink/40 font-body">/ unit</span>
           </p>
 
@@ -127,7 +127,7 @@ export function ProductDetail() {
               min={product.minOrderQty}
               value={quantity}
               onChange={(e) => setQuantity(Number(e.target.value))}
-              className="w-24 border border-forest/20 rounded-lg px-3 py-2 focus:outline-none focus:border-brass"
+              className="w-24 border border-forest/20 rounded-lg px-3 py-2 bg-forest-light text-ink focus:outline-none focus:border-brass"
             />
           </div>
 
@@ -138,7 +138,7 @@ export function ProductDetail() {
                 setAdded(true);
                 setTimeout(() => setAdded(false), 2000);
               }}
-              className="inline-flex items-center gap-2 bg-forest text-porcelain font-semibold px-6 py-3 rounded-full hover:bg-forest-light transition-colors"
+              className="inline-flex items-center gap-2 bg-brass text-forest font-semibold px-6 py-3 rounded-full hover:bg-brass-light transition-colors"
             >
               <ShoppingBag size={18} /> {added ? "Added!" : "Add to cart"}
             </button>

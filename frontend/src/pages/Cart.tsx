@@ -16,7 +16,7 @@ export function Cart() {
         <div className="text-center py-20">
           <ShoppingBag className="mx-auto mb-4 text-forest/20" size={48} />
           <p className="text-ink/60 mb-4">Your cart is empty.</p>
-          <Link to="/products" className="text-forest font-medium hover:text-brass">
+          <Link to="/products" className="text-brass font-medium hover:text-brass-light">
             Browse the catalogue →
           </Link>
         </div>
@@ -36,10 +36,10 @@ export function Cart() {
                       className="w-20 h-20 rounded-lg object-cover shrink-0"
                     />
                     <div className="flex-1">
-                      <Link to={`/products/${item.product.slug}`} className="font-display font-semibold hover:text-forest-light">
+                      <Link to={`/products/${item.product.slug}`} className="font-display font-semibold hover:text-brass">
                         {item.product.name}
                       </Link>
-                      <p className="font-mono text-sm text-forest mt-1">
+                      <p className="font-mono text-sm text-brass mt-1">
                         ₹{item.product.price.toLocaleString("en-IN")} / unit
                       </p>
                       <div className="flex items-center gap-3 mt-2">
@@ -72,13 +72,13 @@ export function Cart() {
             )}
           </div>
 
-          <aside className="bg-forest text-porcelain rounded-2xl p-6 h-fit">
+          <aside className="bg-forest-light text-ink rounded-2xl p-6 h-fit border border-forest/5">
             <h2 className="font-display text-lg font-semibold mb-4">Order summary</h2>
             <div className="flex justify-between text-sm mb-2">
-              <span className="text-porcelain/70">Estimated total</span>
+              <span className="text-ink/70">Estimated total</span>
               <span className="font-mono">₹{totalPrice.toLocaleString("en-IN")}</span>
             </div>
-            <p className="text-xs text-porcelain/50 mb-6">
+            <p className="text-xs text-ink/50 mb-6">
               Final pricing depends on customization and shipping — no payment is collected here.
             </p>
             <Link

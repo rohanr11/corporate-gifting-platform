@@ -18,24 +18,24 @@ export function Contact() {
         <div>
           {submitted ? (
             <div className="bg-forest/5 rounded-2xl p-8 text-center">
-              <CheckCircle2 className="mx-auto mb-3 text-forest" size={40} />
+              <CheckCircle2 className="mx-auto mb-3 text-brass" size={40} />
               <p className="font-medium">Thanks — we'll reply within one business day.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-ink/70 mb-1">Name</label>
-                <input id="name" required className="w-full border border-forest/20 rounded-lg px-4 py-3 focus:outline-none focus:border-brass" />
+                <input id="name" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-ink/70 mb-1">Email</label>
-                <input id="email" type="email" required className="w-full border border-forest/20 rounded-lg px-4 py-3 focus:outline-none focus:border-brass" />
+                <input id="email" type="email" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-ink/70 mb-1">Message</label>
-                <textarea id="message" rows={5} required className="w-full border border-forest/20 rounded-lg px-4 py-3 focus:outline-none focus:border-brass" />
+                <textarea id="message" rows={5} required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
               </div>
-              <button type="submit" className="bg-forest text-porcelain font-semibold px-8 py-3 rounded-full hover:bg-forest-light transition-colors">
+              <button type="submit" className="bg-brass text-forest font-semibold px-8 py-3 rounded-full hover:bg-brass-light transition-colors">
                 Send message
               </button>
             </form>

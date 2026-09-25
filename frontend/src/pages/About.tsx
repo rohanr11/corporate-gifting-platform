@@ -2,7 +2,7 @@ export function About() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl md:text-4xl font-display font-semibold mb-6">About Gilded &amp; Grove</h1>
-      <div className="prose prose-neutral max-w-none text-ink/70 leading-relaxed space-y-5">
+      <div className="prose prose-invert max-w-none text-ink/70 leading-relaxed space-y-5">
         <p>
           Gilded &amp; Grove designs corporate gifts for teams who think gifting is part of the
           culture, not an afterthought. From onboarding kits to executive hampers, every product

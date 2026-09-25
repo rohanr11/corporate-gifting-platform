@@ -72,12 +72,14 @@ export function BulkQuote() {
 function Field({
   label,
   id,
+  name,
   type = "text",
   required,
   placeholder,
 }: {
   label: string;
   id: string;
+  name?: string;
   type?: string;
   required?: boolean;
   placeholder?: string;
@@ -89,7 +91,7 @@ function Field({
       </label>
       <input
         id={id}
-        name={id}
+        name={name || id}
         type={type}
         required={required}
         placeholder={placeholder}

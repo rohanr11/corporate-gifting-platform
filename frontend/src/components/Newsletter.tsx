@@ -33,7 +33,7 @@ export function Newsletter() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@company.com"
-              className="px-4 py-3 rounded-full text-ink w-full sm:w-80 focus:outline-none"
+              className="px-4 py-3 rounded-full bg-forest-light text-ink w-full sm:w-80 focus:outline-none"
             />
             <button
               type="submit"

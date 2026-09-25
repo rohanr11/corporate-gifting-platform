@@ -28,7 +28,7 @@ export function Cart() {
                 item.product && (
                   <div
                     key={item.id}
-                    className="flex gap-4 bg-white rounded-xl border border-forest/5 p-4 shadow-tag"
+                    className="flex gap-4 bg-forest-light rounded-xl border border-forest/5 p-4 shadow-tag"
                   >
                     <img
                       src={item.product.imageUrl}

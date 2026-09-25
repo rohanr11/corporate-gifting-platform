@@ -24,7 +24,7 @@ export function Testimonials() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((t) => (
-          <figure key={t.name} className="bg-white rounded-2xl p-6 shadow-tag border border-forest/5">
+          <figure key={t.name} className="bg-forest-light rounded-2xl p-6 shadow-tag border border-forest/5">
             <blockquote className="text-ink/80 leading-relaxed mb-4">"{t.quote}"</blockquote>
             <figcaption className="text-sm">
               <span className="font-semibold">{t.name}</span>

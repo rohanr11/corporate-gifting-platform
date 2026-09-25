@@ -40,7 +40,7 @@ export function AISearchBar({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Describe your gifting needs..."
-          className="w-full pl-14 pr-32 py-5 rounded-full border-2 border-forest/10 bg-white text-ink placeholder:text-ink/40 focus:border-brass focus:outline-none text-base shadow-tag"
+          className="w-full pl-14 pr-32 py-5 rounded-full border-2 border-forest/10 bg-forest-light text-ink placeholder:text-ink/40 focus:border-brass focus:outline-none text-base shadow-tag"
         />
         <button
           type="submit"

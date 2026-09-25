@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-porcelain text-ink font-body antialiased;
+  @apply bg-forest text-porcelain font-body antialiased;
 }
 
 h1, h2, h3, h4 {

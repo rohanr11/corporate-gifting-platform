@@ -7,18 +7,18 @@ export default {
         // "Gift wrap" palette — a deep forest green + brass gold, built
         // around the idea of unwrapping something considered, not loud.
         forest: {
-          DEFAULT: "#0F2E22",
-          light: "#164A35",
-          dark: "#0A1F17",
+          DEFAULT: "#000000",
+          light: "#1A1A1A",
+          dark: "#000000",
         },
         brass: {
-          DEFAULT: "#C9A227",
-          light: "#E0C15C",
-          dark: "#9C7D1D",
+          DEFAULT: "#D4AF37",
+          light: "#F3E5AB",
+          dark: "#AA8C2C",
         },
-        porcelain: "#F3F0E8",
+        porcelain: "#FFFFFF",
         burgundy: "#6E2A2A",
-        ink: "#181611",
+        ink: "#FFFFFF",
       },
       fontFamily: {
         display: ["'Fraunces'", "serif"],

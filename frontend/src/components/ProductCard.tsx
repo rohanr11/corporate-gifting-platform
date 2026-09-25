@@ -12,7 +12,7 @@ export function ProductCard({ product, reason }: { product: Product; reason?: st
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
-      className="gift-tag bg-white rounded-2xl overflow-hidden shadow-tag border border-forest/5 flex flex-col"
+      className="gift-tag bg-forest-light rounded-2xl overflow-hidden shadow-tag border border-forest/5 flex flex-col"
     >
       <Link to={`/products/${product.slug}`} className="block">
         <div className="aspect-square overflow-hidden bg-porcelain">

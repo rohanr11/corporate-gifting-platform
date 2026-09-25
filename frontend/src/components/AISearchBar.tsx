@@ -40,7 +40,7 @@ export function AISearchBar({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Describe your gifting needs..."
-          className="w-full pl-14 pr-32 py-5 rounded-full border-2 border-forest/10 bg-forest-light text-ink placeholder:text-ink/40 focus:border-brass focus:outline-none text-base shadow-tag"
+          className="w-full pl-14 pr-32 py-5 rounded-full border-2 border-forest/10 bg-[#2A2A2A] text-porcelain placeholder:text-porcelain/40 focus:border-brass focus:outline-none text-base shadow-tag"
         />
         <button
           type="submit"
@@ -60,7 +60,7 @@ export function AISearchBar({
               setQuery(p);
               onSearch(p);
             }}
-            className="text-xs bg-forest-light hover:bg-brass/20 text-ink hover:text-brass px-3 py-1.5 rounded-full transition-colors border border-forest/10"
+            className="text-xs bg-[#2A2A2A] hover:bg-brass/20 text-porcelain hover:text-brass px-3 py-1.5 rounded-full transition-colors border border-forest/10"
           >
             {p}
           </button>

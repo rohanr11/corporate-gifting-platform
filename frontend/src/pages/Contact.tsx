@@ -12,7 +12,7 @@ export function Contact() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-display font-semibold mb-2">Contact us</h1>
-      <p className="text-ink/60 mb-10">Questions about an order or partnership? We'd love to hear from you.</p>
+      <p className="text-porcelain/60 mb-10">Questions about an order or partnership? We'd love to hear from you.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
@@ -24,16 +24,16 @@ export function Contact() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-ink/70 mb-1">Name</label>
-                <input id="name" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
+                <label htmlFor="name" className="block text-sm font-medium text-porcelain/70 mb-1">Name</label>
+                <input id="name" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-porcelain placeholder:text-porcelain/40 focus:outline-none focus:border-brass" />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-ink/70 mb-1">Email</label>
-                <input id="email" type="email" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
+                <label htmlFor="email" className="block text-sm font-medium text-porcelain/70 mb-1">Email</label>
+                <input id="email" type="email" required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-porcelain placeholder:text-porcelain/40 focus:outline-none focus:border-brass" />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-ink/70 mb-1">Message</label>
-                <textarea id="message" rows={5} required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass" />
+                <label htmlFor="message" className="block text-sm font-medium text-porcelain/70 mb-1">Message</label>
+                <textarea id="message" rows={5} required className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-porcelain placeholder:text-porcelain/40 focus:outline-none focus:border-brass" />
               </div>
               <button type="submit" className="bg-brass text-forest font-semibold px-8 py-3 rounded-full hover:bg-brass-light transition-colors">
                 Send message
@@ -47,21 +47,21 @@ export function Contact() {
             <Mail className="text-brass mt-1" size={18} />
             <div>
               <h2 className="font-semibold text-sm">Email</h2>
-              <p className="text-ink/60 text-sm">hello@gildedandgrove.com</p>
+              <p className="text-porcelain/60 text-sm">hello@gildedandgrove.com</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Phone className="text-brass mt-1" size={18} />
             <div>
               <h2 className="font-semibold text-sm">Phone</h2>
-              <p className="text-ink/60 text-sm">+91 80 4000 1200</p>
+              <p className="text-porcelain/60 text-sm">+91 80 4000 1200</p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="text-brass mt-1" size={18} />
             <div>
               <h2 className="font-semibold text-sm">Studio</h2>
-              <p className="text-ink/60 text-sm">Bengaluru, Karnataka, India</p>
+              <p className="text-porcelain/60 text-sm">Bengaluru, Karnataka, India</p>
             </div>
           </div>
         </div>

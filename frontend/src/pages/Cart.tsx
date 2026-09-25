@@ -8,14 +8,14 @@ export function Cart() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-display font-semibold mb-2">Your Cart</h1>
-      <p className="text-ink/60 mb-8">Review your gifts before requesting a bulk quote.</p>
+      <p className="text-porcelain/60 mb-8">Review your gifts before requesting a bulk quote.</p>
 
       {loading ? (
-        <p className="text-ink/50">Loading…</p>
+        <p className="text-porcelain/50">Loading…</p>
       ) : items.length === 0 ? (
         <div className="text-center py-20">
           <ShoppingBag className="mx-auto mb-4 text-forest/20" size={48} />
-          <p className="text-ink/60 mb-4">Your cart is empty.</p>
+          <p className="text-porcelain/60 mb-4">Your cart is empty.</p>
           <Link to="/products" className="text-brass font-medium hover:text-brass-light">
             Browse the catalogue →
           </Link>
@@ -61,7 +61,7 @@ export function Cart() {
                         <button
                           onClick={() => removeItem(item.id)}
                           aria-label="Remove item"
-                          className="ml-4 text-ink/40 hover:text-burgundy"
+                          className="ml-4 text-porcelain/40 hover:text-burgundy"
                         >
                           <Trash2 size={16} />
                         </button>
@@ -72,13 +72,13 @@ export function Cart() {
             )}
           </div>
 
-          <aside className="bg-forest-light text-ink rounded-2xl p-6 h-fit border border-forest/5">
+          <aside className="bg-forest-light text-porcelain rounded-2xl p-6 h-fit border border-forest/5">
             <h2 className="font-display text-lg font-semibold mb-4">Order summary</h2>
             <div className="flex justify-between text-sm mb-2">
-              <span className="text-ink/70">Estimated total</span>
+              <span className="text-porcelain/70">Estimated total</span>
               <span className="font-mono">₹{totalPrice.toLocaleString("en-IN")}</span>
             </div>
-            <p className="text-xs text-ink/50 mb-6">
+            <p className="text-xs text-porcelain/50 mb-6">
               Final pricing depends on customization and shipping — no payment is collected here.
             </p>
             <Link

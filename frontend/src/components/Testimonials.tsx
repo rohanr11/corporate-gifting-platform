@@ -25,10 +25,10 @@ export function Testimonials() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((t) => (
           <figure key={t.name} className="bg-forest-light rounded-2xl p-6 shadow-tag border border-forest/5">
-            <blockquote className="text-ink/80 leading-relaxed mb-4">"{t.quote}"</blockquote>
+            <blockquote className="text-porcelain/80 leading-relaxed mb-4">"{t.quote}"</blockquote>
             <figcaption className="text-sm">
               <span className="font-semibold">{t.name}</span>
-              <span className="text-ink/50"> — {t.role}</span>
+              <span className="text-porcelain/50"> — {t.role}</span>
             </figcaption>
           </figure>
         ))}

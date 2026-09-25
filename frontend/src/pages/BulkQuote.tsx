@@ -16,7 +16,7 @@ export function BulkQuote() {
       <main className="max-w-xl mx-auto px-6 py-24 text-center">
         <CheckCircle2 className="mx-auto mb-4 text-brass" size={48} />
         <h1 className="text-2xl font-display font-semibold mb-2">Request received</h1>
-        <p className="text-ink/60">
+        <p className="text-porcelain/60">
           Our team will reach out within one business day with a tailored quote.
         </p>
       </main>
@@ -26,7 +26,7 @@ export function BulkQuote() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-display font-semibold mb-2">Request a bulk quote</h1>
-      <p className="text-ink/60 mb-10">
+      <p className="text-porcelain/60 mb-10">
         Tell us about your team and occasion — we'll put together a custom proposal.
       </p>
 
@@ -45,14 +45,14 @@ export function BulkQuote() {
         </div>
         <Field label="Occasion" id="occasion" name="occasion" placeholder="e.g. Diwali, onboarding, client appreciation" required />
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-ink/70 mb-1">
+          <label htmlFor="message" className="block text-sm font-medium text-porcelain/70 mb-1">
             Additional details
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass"
+            className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-porcelain placeholder:text-porcelain/40 focus:outline-none focus:border-brass"
             placeholder="Anything else we should know?"
           />
 
@@ -86,7 +86,7 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="block text-sm font-medium text-ink/70 mb-1">
+      <label htmlFor={id} className="block text-sm font-medium text-porcelain/70 mb-1">
         {label}
       </label>
       <input
@@ -95,7 +95,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-ink placeholder:text-ink/40 focus:outline-none focus:border-brass"
+        className="w-full border border-forest/20 rounded-lg px-4 py-3 bg-forest-light text-porcelain placeholder:text-porcelain/40 focus:outline-none focus:border-brass"
       />
     </div>
   );

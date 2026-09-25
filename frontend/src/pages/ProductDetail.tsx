@@ -38,7 +38,7 @@ export function ProductDetail() {
     return (
       <main className="max-w-3xl mx-auto px-6 py-24 text-center">
         <h1 className="text-2xl font-display font-semibold mb-2">Product not found</h1>
-        <p className="text-ink/60 mb-6">This gift may have been renamed or removed.</p>
+        <p className="text-porcelain/60 mb-6">This gift may have been renamed or removed.</p>
         <Link to="/products" className="text-brass font-medium hover:text-brass-light">
           ← Back to catalogue
         </Link>
@@ -47,7 +47,7 @@ export function ProductDetail() {
   }
 
   if (!product) {
-    return <main className="max-w-7xl mx-auto px-6 py-24 text-ink/50">Loading…</main>;
+    return <main className="max-w-7xl mx-auto px-6 py-24 text-porcelain/50">Loading…</main>;
   }
 
   const wishlisted = isWishlisted(product.id);
@@ -89,14 +89,14 @@ export function ProductDetail() {
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
 
-      <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-sm text-ink/50 mb-6">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-sm text-porcelain/50 mb-6">
         <Link to="/products" className="hover:text-brass">Products</Link>
         <ChevronRight size={14} />
         <Link to={`/products?category=${product.category?.slug}`} className="hover:text-brass">
           {product.category?.name}
         </Link>
         <ChevronRight size={14} />
-        <span className="text-ink/80">{product.name}</span>
+        <span className="text-porcelain/80">{product.name}</span>
       </nav>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -110,24 +110,24 @@ export function ProductDetail() {
 
         <div>
           <h1 className="text-3xl font-display font-semibold mb-2">{product.name}</h1>
-          <div className="flex items-center gap-2 text-sm text-ink/50 mb-4">
+          <div className="flex items-center gap-2 text-sm text-porcelain/50 mb-4">
             <Star size={15} className="text-brass" fill="currentColor" />
             {product.rating.toFixed(1)} rating · Min. order {product.minOrderQty} units
           </div>
-          <p className="text-ink/70 leading-relaxed mb-6">{product.description}</p>
+          <p className="text-porcelain/70 leading-relaxed mb-6">{product.description}</p>
           <p className="font-mono text-2xl font-semibold text-brass mb-6">
-            ₹{product.price.toLocaleString("en-IN")} <span className="text-sm text-ink/40 font-body">/ unit</span>
+            ₹{product.price.toLocaleString("en-IN")} <span className="text-sm text-porcelain/40 font-body">/ unit</span>
           </p>
 
           <div className="flex items-center gap-3 mb-6">
-            <label htmlFor="quantity" className="text-sm text-ink/60">Quantity</label>
+            <label htmlFor="quantity" className="text-sm text-porcelain/60">Quantity</label>
             <input
               id="quantity"
               type="number"
               min={product.minOrderQty}
               value={quantity}
               onChange={(e) => setQuantity(Number(e.target.value))}
-              className="w-24 border border-forest/20 rounded-lg px-3 py-2 bg-forest-light text-ink focus:outline-none focus:border-brass"
+              className="w-24 border border-forest/20 rounded-lg px-3 py-2 bg-forest-light text-porcelain focus:outline-none focus:border-brass"
             />
           </div>
 

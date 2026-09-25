@@ -30,7 +30,7 @@ export function Search() {
     <main className="max-w-5xl mx-auto px-6 py-16">
       <div className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-display font-semibold mb-3">AI Gift Finder</h1>
-        <p className="text-ink/60 max-w-xl mx-auto">
+        <p className="text-porcelain/60 max-w-xl mx-auto">
           Tell us the occasion, budget, and headcount — we'll match you to real products from
           our catalogue, not generic suggestions.
         </p>
@@ -57,12 +57,12 @@ export function Search() {
             transition={{ duration: 0.4 }}
             className="mt-10"
           >
-            <p className="text-lg text-ink/80 bg-forest/5 rounded-2xl p-5 mb-8 leading-relaxed">
+            <p className="text-lg text-porcelain/80 bg-forest/5 rounded-2xl p-5 mb-8 leading-relaxed">
               {result.summary}
             </p>
 
             {result.recommendations.length === 0 ? (
-              <p className="text-ink/50 text-center">
+              <p className="text-porcelain/50 text-center">
                 No matching products found. Try rephrasing your request.
               </p>
             ) : (

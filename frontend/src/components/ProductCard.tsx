@@ -42,7 +42,7 @@ export function ProductCard({ product, reason }: { product: Product; reason?: st
           </button>
         </div>
 
-        <p className="text-sm text-ink/60 mt-1 line-clamp-2">{product.shortDescription}</p>
+        <p className="text-sm text-porcelain/60 mt-1 line-clamp-2">{product.shortDescription}</p>
 
         {reason && (
           <p className="text-xs text-forest-light mt-2 italic border-l-2 border-brass pl-2">
@@ -52,12 +52,12 @@ export function ProductCard({ product, reason }: { product: Product; reason?: st
 
         <div className="mt-auto pt-3 flex items-center justify-between">
           <span className="font-mono font-semibold text-forest">₹{product.price.toLocaleString("en-IN")}</span>
-          <span className="flex items-center gap-1 text-xs text-ink/50">
+          <span className="flex items-center gap-1 text-xs text-porcelain/50">
             <Star size={13} className="text-brass" fill="currentColor" />
             {product.rating.toFixed(1)}
           </span>
         </div>
-        <p className="text-xs text-ink/40 mt-1">Min. order: {product.minOrderQty} units</p>
+        <p className="text-xs text-porcelain/40 mt-1">Min. order: {product.minOrderQty} units</p>
       </div>
     </motion.div>
   );

@@ -30,19 +30,19 @@ export function Products() {
       <h1 className="text-3xl md:text-4xl font-display font-semibold mb-2">
         Corporate Gift Catalogue
       </h1>
-      <p className="text-ink/60 mb-8">
+      <p className="text-porcelain/60 mb-8">
         {products.length} gift{products.length === 1 ? "" : "s"} available
         {category ? ` in ${category.replace("-", " ")}` : ""}.
       </p>
 
       <div className="flex flex-wrap items-center gap-2 mb-8">
-        <span className="flex items-center gap-1 text-sm text-ink/50 mr-2">
+        <span className="flex items-center gap-1 text-sm text-porcelain/50 mr-2">
           <SlidersHorizontal size={14} /> Filter:
         </span>
         <button
           onClick={() => setSearchParams({})}
           className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
-            !category ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-ink"
+            !category ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-porcelain"
           }`}
         >
           All
@@ -52,7 +52,7 @@ export function Products() {
             key={c.id}
             onClick={() => setSearchParams({ category: c.slug })}
             className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
-              category === c.slug ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-ink"
+              category === c.slug ? "bg-brass text-forest" : "bg-forest-light hover:bg-forest-light/80 text-porcelain"
             }`}
           >
             {c.name}
@@ -61,9 +61,9 @@ export function Products() {
       </div>
 
       {loading ? (
-        <p className="text-ink/50">Loading products…</p>
+        <p className="text-porcelain/50">Loading products…</p>
       ) : products.length === 0 ? (
-        <p className="text-ink/50">No products found. Try a different category.</p>
+        <p className="text-porcelain/50">No products found. Try a different category.</p>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((p) => (
